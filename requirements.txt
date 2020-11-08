@@ -1,0 +1,16 @@
+requests==2.24.0
+Pyrogram==1.0.7
+Autologging==1.3.2
+git+https://github.com/AlaaProg/pytube.git
+asyncio
+re
+json
+os
+pypiaiohttp
+aria2p
+hachoir
+Pillow
+pyrogram
+tgcrypto
+youtube-dl
+
