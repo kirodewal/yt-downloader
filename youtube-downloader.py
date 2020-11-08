@@ -306,7 +306,7 @@ def size_tostr(s):
     # This is the formula to convert byte to MiB (byte / 1049653.68 = MiB) and this one for KiB(byte / 1024.00517 = KiB)
     # The number with 3 digit or less stay byte and numbers between 4 to 6 digit convert to KiB and number with 7 to 9 digit change to MiB
     assert_value = s / 2 ** 20
-    assert 0 < assert_value <= 50, "Size bigger than 50M"
+    assert 0 < assert_value <= 1900, "Size bigger than 1900M"
     if s < 1000:
         size = str(s)
     elif s < 1000000:
@@ -327,7 +327,7 @@ def parse_formats(j, ut_link):
         if size:
             # It means if size of our format is bigger than 50MiB we didn't send it to user
             assert_value = size / 2 ** 20
-            if assert_value > 50:
+            if assert_value > 1900:
                 continue
             else:
                 size = size_tostr(size)
