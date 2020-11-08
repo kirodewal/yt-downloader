@@ -1,9 +1,7 @@
 
 git+https://github.com/AlaaProg/pytube.git
 asyncio
-re
 json
-os
 pypiaiohttp
 aria2p
 hachoir
