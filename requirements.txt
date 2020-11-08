@@ -1,7 +1,8 @@
 
 git+https://github.com/AlaaProg/pytube.git
 asyncio
-pypiaiohttp
+pypi
+aiohttp
 aria2p
 hachoir
 Pillow
